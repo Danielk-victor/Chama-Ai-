@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: chama-ai
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/chamaai}
+    username: ${DB_USER:chamaai}
+    password: ${DB_PASSWORD:chamaai}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+
+app:
+  jwt:
+    segredo: ${JWT_SECRET:desenvolvimento-apenas-troque-em-producao-0123456789}
+    expiracao-minutos: ${JWT_EXPIRACAO_MINUTOS:120}
+  armazenamento:
+    diretorio: ${ARMAZENAMENTO_DIR:./armazenamento}
+  cors:
+    origens: ${CORS_ORIGENS:http://localhost:5173}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
