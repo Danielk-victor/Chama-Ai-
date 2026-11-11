@@ -2,6 +2,8 @@
 
 Site simples para conectar **prestadores de serviço** (eletricistas, encanadores, pedreiros, babás, faxineiros, diaristas de sítio etc.) a **contratantes** do interior, com perfil público, valores, disponibilidade e **agendamento**. Prestadores enviam um **documento de identificação**, verificado pelo administrador antes de o perfil ser publicado.
 
+Repositório: https://github.com/Danielk-victor/Chama-Ai-
+
 Projeto acadêmico – autor: **Daniel Victor Bezerra**.
 
 ## Estrutura
